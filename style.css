@@ -1,0 +1,74 @@
+:root{--py-120: 120px;}
+body, * {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans', sans-serif !important;
+    color: #888;
+}
+body *::selection{
+    background-color: #e32929;
+    color: white;
+}
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Roboto Slab', serif !important;
+    font-weight: 300;
+    color:#000;
+}
+.bg-danger{
+    background-color: #e32929 !important;
+}
+nav .nav-item .nav-link{
+    opacity: 0.5!important;
+}
+nav .nav-item .active{
+    color: #e32929 !important;
+    opacity: 1 !important;
+}
+nav .nav-item .nav-link:hover{
+    color: #e32929;
+    opacity: 1 !important;
+}
+nav ul{
+   column-gap: 15px;
+}
+.py-120{
+    padding: var(--py-120) 0;
+}
+.promo h1{
+    font-weight: normal;
+}
+.projects .image{
+    height: 250px !important;
+    background-size: cover;
+}
+
+.projects .row:nth-child(1) .image{
+    background: url(images/work_1.jpg);
+}
+.projects .row:nth-child(2) .image{
+    background: url(images/work_2.jpg);
+}
+
+.projects .row:nth-child(3) .image{
+    background: url(images/work_3.jpg);
+}
+.projects .row:nth-child(4) .image{
+    background: url(images/work_4.jpg);
+}
+.projects .row:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+.projects .desc .wrap{
+    margin-left: 20px;
+}
+.projects .desc{
+    display: flex;
+    align-items: center;
+}
+
+  /* тоже рабочая схема*
+
+   .projects .desc .wrap{
+    margin: 30px;
+    margin-bottom: 0;
+  } */
